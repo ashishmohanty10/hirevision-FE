@@ -8,7 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "primary-font": "Be Vietnam Pro",
+        "secondary-font": "Poppins",
+      },
       colors: {
+        btnPrimary: "#0000fe",
+        headingText: "#02015a",
+        textPrimary: "#0000ee",
+        textSecondary: "#9ca3bd",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
