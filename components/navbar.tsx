@@ -16,7 +16,7 @@ export function Navbar() {
     <motion.nav
       initial={{ opacity: 0, y: "-100%" }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ ease: "linear", duration: 0.5 }}
+      transition={{ ease: "backIn", duration: 0.3 }}
       className="flex justify-between items-center bg-transparent backdrop-blur-md px-20 py-4 sticky top-0 left-0 z-50 hover:bg-white bg-opacity-10 transition-all group"
     >
       <Link href={"/"}>
