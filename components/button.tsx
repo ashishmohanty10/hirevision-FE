@@ -13,7 +13,7 @@ export function Button({ active, text, className }: ButtonProps) {
       initial={{ paddingRight: 24 }}
       whileHover={{ paddingRight: 30 }}
       transition={{ ease: "linear", duration: 0.3 }}
-      className={`font-primary-font px-6 py-3 rounded-md  font-base font-semibold flex items-center ${className} ${
+      className={`font-primary-font px-6 py-3 rounded-md  font-base font-semibold flex items-center ${className} w-fit ${
         active === true
           ? "bg-btnPrimary text-white"
           : "hover:bg-btnPrimary transition border hover:border-btnPrimary border-white text-textPrimary hover:text-white"

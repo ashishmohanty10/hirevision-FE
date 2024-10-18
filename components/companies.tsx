@@ -21,8 +21,9 @@ export function ComapanyMarquee() {
     <motion.div
       initial={{ y: "100%", opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "backIn", duration: 1 }}
+      transition={{ ease: "backIn", duration: 0.5 }}
       className="w-[1100px]  mx-auto overflow-hidden my-8 px-10 py-3"
+      viewport={{ once: true }}
     >
       <p className="font-primary-font text-xl font-normal text-slate-500 text-center mb-8 ">
         Already chosen by the world leaders
