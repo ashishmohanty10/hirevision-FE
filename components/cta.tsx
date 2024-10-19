@@ -4,23 +4,27 @@ import Arrow from "@/public/arrow.svg";
 import Arrow2 from "@/public/asset 37.svg";
 import * as motion from "framer-motion/client";
 
-export function CTA() {
+interface CTAProps {
+  title: string;
+  description: string;
+}
+
+export function CTA({ title, description }: CTAProps) {
   return (
     <motion.div
       initial={{ y: "100%", opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ ease: "linear", duration: 1 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ ease: "linear", duration: 0.5, delay: 0 }}
+      viewport={{ once: true }}
       className="bg-gradient-to-r from-blue-700 to-blue-500 rounded-xl px-20 py-16 flex items-center justify-between my-6"
     >
       <div className="space-y-5">
         <p className="font-secondary-font font-semibold text-white text-5xl w-[600px] leading-tight">
-          Make a lasting impression with Hirevision
+          {title}
         </p>
 
         <p className="text-white font-primary-font font-medium text-lg w-[640px]">
-          Discover why hiring managers prefer Hirevision over the competition
-          and what makes it the easiest, most powerful video interviewing
-          platform on the marke
+          {description}
         </p>
       </div>
 

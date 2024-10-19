@@ -103,3 +103,40 @@ export const powerfulFeatures = [
     icon: powerfulFeature6,
   },
 ];
+
+export const faq = [
+  {
+    question: "Does this app offer a free trial period?",
+    answer:
+      "All individual Framer subscriptions have been grandfathered into a Pro plan at your existing rate. If you were on a Small Team plan, then all 5 seats have been converted over to Pro seats at your existing rate. Regardless of your subscription plan, all new paid editors that you add to your subscription will be billed at the new plan rates.",
+  },
+  {
+    question: "What payment methods do you offer?",
+    answer:
+      "All individual Framer subscriptions have been grandfathered into a Pro plan at your existing rate. If you were on a Small Team plan, then all 5 seats have been converted over to Pro seats at your existing rate. Regardless of your subscription plan, all new paid editors that you add to your subscription will be billed at the new plan rates.",
+  },
+  {
+    question: "How much does a subscription cost?",
+    answer:
+      "All individual Framer subscriptions have been grandfathered into a Pro plan at your existing rate. If you were on a Small Team plan, then all 5 seats have been converted over to Pro seats at your existing rate. Regardless of your subscription plan, all new paid editors that you add to your subscription will be billed at the new plan rates.",
+  },
+  {
+    question: "What is your refund policy?",
+    answer:
+      "All individual Framer subscriptions have been grandfathered into a Pro plan at your existing rate. If you were on a Small Team plan, then all 5 seats have been converted over to Pro seats at your existing rate. Regardless of your subscription plan, all new paid editors that you add to your subscription will be billed at the new plan rates.",
+  },
+];
+
+export const Resouces = [
+  { id: 1, name: "Blog", href: "#" },
+  { id: 2, name: "Apps", href: "#" },
+  { id: 3, name: "Learn", href: "#" },
+  { id: 4, name: "Integrations", href: "#" },
+  { id: 5, name: "Careers", href: "#" },
+];
+export const Company = [
+  { id: 1, name: "Our Story", href: "#" },
+  { id: 2, name: "Our Team", href: "#" },
+  { id: 3, name: "Press", href: "#" },
+  { id: 4, name: "Contact", href: "#" },
+];

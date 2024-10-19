@@ -12,7 +12,7 @@ export function Features() {
       <motion.div
         initial={{ y: "100%", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ ease: "linear", duration: 0.5 }}
+        transition={{ ease: "linear", duration: 0.5, delay: 0 }}
         viewport={{ once: true }}
         className="flex items-center gap-20 py-5  "
       >
@@ -39,7 +39,7 @@ export function Features() {
 
       <motion.div
         initial={{ y: "100%", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "linear", duration: 0.5 }}
         viewport={{ once: true }}
         className="flex items-center gap-20 py-5  "
@@ -67,7 +67,7 @@ export function Features() {
 
       <motion.div
         initial={{ y: "100%", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "linear", duration: 0.5 }}
         viewport={{ once: true }}
         className="flex items-center gap-20 py-5  "

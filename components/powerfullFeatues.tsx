@@ -8,9 +8,9 @@ export function PowefulFeature() {
     <motion.div
       initial={{ y: "100%", opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "linear", duration: 0.5 }}
+      transition={{ ease: "linear", duration: 0.5, delay: 0.5 }}
       viewport={{ once: true }}
-      className="flex flex-col items-center py-5 space-y-5"
+      className="flex flex-col items-center py-5 space-y-5 my-9"
     >
       <Badge label="included" />
 
@@ -22,14 +22,20 @@ export function PowefulFeature() {
         Gain valuable data-driven insights into talent markets worldwide.
       </p>
 
-      <div className="grid grid-cols-3 py-4 gap-8">
+      <motion.div
+        initial={{ y: "100%", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ ease: "linear", duration: 1 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-3 py-4 gap-8"
+      >
         {powerfulFeatures.map((items) => (
           <div key={items.id} className="flex flex-col items-center space-y-5">
-            <div className="bg-textPrimary rounded-full p-4">
+            <div className="bg-textPrimary rounded-full p-2">
               <Image
                 src={items.icon}
                 alt="powerful feature"
-                className="size-12"
+                className="size-8"
               />
             </div>
 
@@ -42,7 +48,7 @@ export function PowefulFeature() {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

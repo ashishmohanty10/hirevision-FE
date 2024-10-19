@@ -5,7 +5,7 @@ export default function EasyToImplement() {
     <motion.div
       initial={{ y: "100%", opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "linear", duration: 0.5 }}
+      transition={{ ease: "linear", duration: 0.5, delay: 0 }}
       viewport={{ once: true }}
       className="flex items-center justify-center flex-col py-5 space-y-5 my-5   "
     >

@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="bg-textPrimary w-[400px] h-[200px] absolute -top-48 right-[600px] -z-10 blur-3xl rounded-full overflow-clip"></div>
       <div className="bg-yellow-300 w-[400px] h-[400px] absolute -top-48 -left-12 -z-20  blur-3xl rounded-full"></div>
 
-      <div className="flex flex-col items-center  pt-28">
+      <div className="flex flex-col items-center  pt-28 ">
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -35,7 +35,7 @@ const Hero = () => {
           initial={{ y: "70%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "backIn", duration: 0.5 }}
-          className="text-center text-7xl font-medium font-secondary-font tracking-tight xl:w-[900px] mb-8 text-headingText"
+          className="text-center text-7xl font-medium font-secondary-font tracking-tight xl:w-[900px] mb-8 text-headingText leading-tight"
         >
           Boost your hiring process with AI solution
         </motion.p>
