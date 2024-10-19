@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import ArrowRight from "@/public/asset 44.svg";
-import { customer } from "@/constants/constants";
+import { customer, heroImg } from "@/constants/constants";
 import * as motion from "framer-motion/client";
 import { Button } from "./button";
 
 const Hero = () => {
   return (
-    <div className="w-full max-h-screen">
+    <div className="w-full min-h-screen">
       <div className="bg-textPrimary w-[700px] h-[400px] absolute -top-48 right-0 -z-10 blur-3xl rounded-full overflow-clip"></div>
       <div className="bg-green-300 w-[400px] h-[300px] absolute -top-48 left-44 -z-10 blur-3xl rounded-full overflow-clip"></div>
       <div className="bg-textPrimary w-[400px] h-[300px] absolute -top-48 right-[500px] -z-10 blur-3xl rounded-full overflow-clip"></div>
@@ -18,7 +18,7 @@ const Hero = () => {
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ ease: "backIn", duration: 0.5 }}
+          transition={{ ease: "backIn", duration: 0.6 }}
           className="bg-[#D8D5FA] py-2 px-4 w-fit rounded-3xl flex items-center gap-3 text-sm font-primary-font font-medium mb-5"
         >
           <div className="bg-[#EAF2FF] text-textPrimary rounded-2xl px-2 py-1">
@@ -74,21 +74,34 @@ const Hero = () => {
         <motion.div
           initial={{ y: "70%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ ease: "backIn", duration: 0.5 }}
+          transition={{ ease: "backIn", duration: 0.6 }}
           className="flex gap-4 mt-8"
         >
           <Button
+            img={false}
             active={false}
             text="Learn More"
             className="border-textPrimary text-textPrimary"
           />
           <Button
+            img={true}
             active={true}
             text="Request Demo"
             className="border-textPrimary text-textPrimary"
           />
         </motion.div>
       </div>
+
+      <motion.div className="flex items-center py-16 gap-2 overflow-hidden">
+        {heroImg.map((items) => (
+          <Image
+            key={items.id}
+            alt="hero images"
+            src={items.img}
+            className="w-[300px]"
+          />
+        ))}
+      </motion.div>
     </div>
   );
 };

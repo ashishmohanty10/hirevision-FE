@@ -8,13 +8,13 @@ import * as motion from "framer-motion/client";
 
 export function Features() {
   return (
-    <>
+    <div className="flex flex-col gap-y-10">
       <motion.div
         initial={{ y: "100%", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ ease: "linear", duration: 0.5 }}
         viewport={{ once: true }}
-        className="flex items-center gap-20 py-12"
+        className="flex items-center gap-20 py-5  "
       >
         <div className="space-y-5 ">
           <Badge label="FEATURES" />
@@ -29,7 +29,7 @@ export function Features() {
             candidates first.
           </p>
 
-          <Button active={true} text="Request Demo" />
+          <Button active={false} img={true} text="Request Demo" />
         </div>
 
         <div>
@@ -42,7 +42,7 @@ export function Features() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ ease: "linear", duration: 0.5 }}
         viewport={{ once: true }}
-        className="flex items-center gap-20 py-32"
+        className="flex items-center gap-20 py-5  "
       >
         <div>
           <Image src={Feature1} alt="feature 1" />
@@ -61,7 +61,7 @@ export function Features() {
             candidates first.
           </p>
 
-          <Button active={true} text="Request Demo" />
+          <Button active={false} img={true} text="Request Demo" />
         </div>
       </motion.div>
 
@@ -70,7 +70,7 @@ export function Features() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ ease: "linear", duration: 0.5 }}
         viewport={{ once: true }}
-        className="flex items-center gap-20 py-32"
+        className="flex items-center gap-20 py-5  "
       >
         <div className="space-y-5 ">
           <Badge label="FEATURES" />
@@ -85,13 +85,13 @@ export function Features() {
             candidates first.
           </p>
 
-          <Button active={true} text="Request Demo" />
+          <Button active={false} img={true} text="Request Demo" />
         </div>
 
         <div>
           <Image src={Feature3} alt="feature 3" />
         </div>
       </motion.div>
-    </>
+    </div>
   );
 }

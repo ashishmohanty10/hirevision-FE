@@ -8,6 +8,7 @@ import * as motion from "framer-motion/client";
 import Arrow from "@/public/arrow.svg";
 import Arrow2 from "@/public/asset 37.svg";
 import { navLinks } from "@/constants/constants";
+import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const pathName = usePathname();
@@ -16,7 +17,7 @@ export function Navbar() {
     <motion.nav
       initial={{ opacity: 0, y: "-100%" }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ ease: "backIn", duration: 0.3 }}
+      transition={{ ease: "backIn", duration: 0.6 }}
       className="flex justify-between items-center bg-transparent backdrop-blur-md px-20 py-4 sticky top-0 left-0 z-50 hover:bg-white bg-opacity-10 transition-all group"
     >
       <Link href={"/"}>
@@ -38,11 +39,13 @@ export function Navbar() {
       </div>
 
       <div>
-        <motion.div
+        <motion.button
           initial={{ paddingRight: 24 }}
           whileHover={{ paddingRight: 30 }}
           transition={{ ease: "linear", duration: 0.3 }}
-          className={`font-primary-font px-6 py-3 rounded-md text-white font-base font-semibold flex items-center hover:bg-btnPrimary hover:!text-white transition  border hover:border-btnPrimary border-white group-hover:border-textPrimary group-hover:text-textPrimary`}
+          className={cn(
+            `py-3 px-4 flex items-cneter gap-2 font-primary-font text-white  border border-white rounded-lg group-hover:border-textPrimary group-hover:text-textPrimary  `
+          )}
         >
           <p className="mr-2">Signin</p>
 
@@ -56,7 +59,7 @@ export function Navbar() {
             alt="Arrow"
             className="size-6 hidden group-hover:block"
           />
-        </motion.div>
+        </motion.button>
       </div>
     </motion.nav>
   );
