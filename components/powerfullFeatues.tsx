@@ -6,15 +6,15 @@ import Image from "next/image";
 export function PowefulFeature() {
   return (
     <motion.div
-      initial={{ y: "100%", opacity: 0 }}
+      initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "linear", duration: 0.5, delay: 0.5 }}
+      transition={{ staggerChildren: 0.6 }}
       viewport={{ once: true }}
       className="flex flex-col items-center py-5 space-y-5 my-9"
     >
       <Badge label="included" />
 
-      <p className="text-center font-secondary-font font-medium text-6xl w-[750px] tracking-tight">
+      <p className="text-center font-secondary-font font-medium  text-2xl md:text-5xl xl:text-6xl xl:w-[750px] tracking-tight">
         Powerful features tailored to your needs
       </p>
 
@@ -23,11 +23,11 @@ export function PowefulFeature() {
       </p>
 
       <motion.div
-        initial={{ y: "100%", opacity: 0 }}
+        initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ ease: "linear", duration: 1 }}
+        transition={{ staggerChildren: 0.6 }}
         viewport={{ once: true }}
-        className="grid grid-cols-3 py-4 gap-8"
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-4 gap-8"
       >
         {powerfulFeatures.map((items) => (
           <div key={items.id} className="flex flex-col items-center space-y-5">

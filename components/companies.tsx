@@ -19,10 +19,10 @@ const marqueeVarient = {
 export function ComapanyMarquee() {
   return (
     <motion.div
-      initial={{ y: "100%", opacity: 0 }}
+      initial={{ opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "backIn", duration: 0.5, delay: 0 }}
-      className="w-[1100px]  mx-auto overflow-hidden my-8 px-10 py-3"
+      transition={{ staggerChildren: 0.6 }}
+      className="xl:w-[1100px] mx-auto overflow-hidden my-8 px-10 py-3"
       viewport={{ once: true }}
     >
       <p className="font-primary-font text-xl font-normal text-slate-500 text-center mb-8 ">

@@ -14,16 +14,16 @@ export function CTA({ title, description }: CTAProps) {
     <motion.div
       initial={{ y: "100%", opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "linear", duration: 0.5, delay: 0 }}
+      transition={{ staggerChildren: 0.6 }}
       viewport={{ once: true }}
-      className="bg-gradient-to-r from-blue-700 to-blue-500 rounded-xl px-20 py-16 flex items-center justify-between my-6"
+      className="bg-gradient-to-r from-blue-700 to-blue-500 rounded-xl px-20 py-16 xl:flex items-center justify-between my-6 space-y-5"
     >
       <div className="space-y-5">
-        <p className="font-secondary-font font-semibold text-white text-5xl w-[600px] leading-tight">
+        <p className="font-secondary-font font-semibold text-white text-xl md:text-3xl xl:text-5xl xl:w-[600px] leading-tight">
           {title}
         </p>
 
-        <p className="text-white font-primary-font font-medium text-lg w-[640px]">
+        <p className="text-white font-primary-font font-medium text-sm xl:text-lg xl:w-[640px]">
           {description}
         </p>
       </div>

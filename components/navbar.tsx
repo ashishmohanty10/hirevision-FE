@@ -18,13 +18,13 @@ export function Navbar() {
       initial={{ opacity: 0, y: "-100%" }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "backIn", duration: 0.6 }}
-      className="flex justify-between items-center bg-transparent backdrop-blur-md px-20 py-4 sticky top-0 left-0 z-50 hover:bg-white bg-opacity-10 transition-all group"
+      className="flex justify-between items-center bg-transparent backdrop-blur-md px-5 md:px-10 xl:px-20 py-4 sticky top-0 left-0 z-50 hover:bg-white bg-opacity-10 transition-all group"
     >
       <Link href={"/"}>
         <Image src={Logo} alt="Logo" />
       </Link>
 
-      <div className="flex items-center gap-8">
+      <div className="hidden xl:flex items-center gap-8 ">
         {navLinks.map((items) => (
           <Link
             href={items.href}
@@ -44,7 +44,7 @@ export function Navbar() {
           whileHover={{ paddingRight: 30 }}
           transition={{ ease: "linear", duration: 0.3 }}
           className={cn(
-            `py-3 px-4 flex items-cneter gap-2 font-primary-font text-white  border border-white rounded-lg group-hover:border-textPrimary group-hover:text-textPrimary  `
+            `py-3 px-4 xl:flex items-cneter gap-2 font-primary-font text-white  border border-white rounded-lg group-hover:border-textPrimary group-hover:text-textPrimary hidden`
           )}
         >
           <p className="mr-2">Signin</p>

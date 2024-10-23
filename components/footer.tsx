@@ -9,15 +9,15 @@ export default function Footer() {
     <motion.div
       initial={{ y: "100%", opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "linear", duration: 0.5, delay: 0 }}
+      transition={{ staggerChildren: 0.6 }}
       viewport={{ once: true }}
-      className="grid grid-cols-3 justify-between mx-44 py-16"
+      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-between mx-44 py-16 space-y-5"
     >
       <div className="space-y-5">
         <Link href={"/"}>
           <Image src={FooterLogo} alt="Footer Logo" />
         </Link>
-        <p className="w-[200px] text-lg text-slate-500">
+        <p className="xl:w-[200px] text-lg text-slate-500">
           Significantly enhance your screening and recruitment procedures.
         </p>
       </div>
@@ -27,14 +27,14 @@ export default function Footer() {
           <Link
             key={items.id}
             href={items.href}
-            className="text-4xl font-semibold text-slate-700 hover:text-textPrimary transition"
+            className="text-2xl xl:text-4xl font-semibold text-slate-700 hover:text-textPrimary transition"
           >
             {items.name}
           </Link>
         ))}
       </div>
 
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 xl:grid-cols-2 space-y-5">
         <div className="flex flex-col gap-1 font-medium font-primary-font">
           <p className="text-lg text-slate-800 ">Resources</p>
           {Resouces.map((items) => (

@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import ArrowRight from "@/public/asset 44.svg";
-import { customer, heroImg } from "@/constants/constants";
+import { customer } from "@/constants/constants";
 import * as motion from "framer-motion/client";
 import { Button } from "./button";
+import { HeroImg } from "./heroImg";
 
 const Hero = () => {
   return (
@@ -16,9 +17,9 @@ const Hero = () => {
 
       <div className="flex flex-col items-center  pt-28 ">
         <motion.div
-          initial={{ y: "100%", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ ease: "backIn", duration: 0.6 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: "backIn", duration: 0.5 }}
           className="bg-[#D8D5FA] py-2 px-4 w-fit rounded-3xl flex items-center gap-3 text-sm font-primary-font font-medium mb-5"
         >
           <div className="bg-[#EAF2FF] text-textPrimary rounded-2xl px-2 py-1">
@@ -33,18 +34,18 @@ const Hero = () => {
 
         <motion.p
           initial={{ y: "70%", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "backIn", duration: 0.5 }}
-          className="text-center text-7xl font-medium font-secondary-font tracking-tight xl:w-[900px] mb-8 text-headingText leading-tight"
+          className="text-center text-4xl md:text-5xl xl:text-7xl font-medium font-secondary-font tracking-tight xl:w-[900px] mb-8 text-headingText leading-tight"
         >
           Boost your hiring process with AI solution
         </motion.p>
 
         <motion.p
           initial={{ y: "70%", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "backIn", duration: 0.5 }}
-          className="font-primary-font text-lg w-[600px] text-center text-slate-700 mb-6"
+          className="font-primary-font text-lg md:w-[600px] text-center text-slate-700 mb-6"
         >
           Hirevision is used by numerous businesses, institutions, and
           recruiters to significantly enhance their screening and recruitment
@@ -53,7 +54,7 @@ const Hero = () => {
 
         <motion.div
           initial={{ y: "70%", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "backIn", duration: 0.5 }}
           className="flex items-center"
         >
@@ -73,7 +74,7 @@ const Hero = () => {
 
         <motion.div
           initial={{ y: "70%", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "backIn", duration: 0.6 }}
           className="flex gap-4 mt-8"
         >
@@ -92,16 +93,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <motion.div className="flex items-center py-16 gap-2 overflow-hidden">
-        {heroImg.map((items) => (
-          <Image
-            key={items.id}
-            alt="hero images"
-            src={items.img}
-            className="w-[300px]"
-          />
-        ))}
-      </motion.div>
+      <HeroImg />
     </div>
   );
 };

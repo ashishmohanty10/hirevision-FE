@@ -10,11 +10,11 @@ import FAQArrow from "@/public/asset 45.svg";
 export function FAQ() {
   return (
     <motion.div
-      initial={{ y: "100%", opacity: 0 }}
+      initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "linear", duration: 0.5, delay: 0 }}
+      transition={{ staggerChildren: 0.6 }}
       viewport={{ once: true }}
-      className="flex flex-col items-center justify-center space-y-10 py-16"
+      className="flex flex-col items-center justify-center space-y-10 py-4"
     >
       <Badge label="FAQ" />
 
@@ -47,7 +47,7 @@ function Accordion({ questions, answers }: AccordionProps) {
     setIsAccordion(!isAccordion);
   };
   return (
-    <div className="flex flex-col gap-4 py-4 w-[800px]">
+    <div className="flex flex-col gap-4 py-4 xl:w-[800px]">
       <div
         className="flex items-center justify-between cursor-pointer"
         onClick={handleAccordion}
@@ -73,7 +73,7 @@ function Accordion({ questions, answers }: AccordionProps) {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ ease: "circIn", duration: 0.6 }}
+            transition={{ staggerChildren: 0.6 }}
             className="w-[600px] font-primary-font"
           >
             {" "}

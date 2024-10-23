@@ -9,7 +9,7 @@ import { PowefulFeature } from "@/components/powerfullFeatues";
 
 export default function Home() {
   return (
-    <div className="mx-44">
+    <div className="px-5 md:px-10 xl:px-44  mx-auto">
       <Hero />
       <ComapanyMarquee />
       <EasyToImplement />
