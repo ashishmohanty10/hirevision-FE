@@ -12,7 +12,7 @@ interface CTAProps {
 export function CTA({ title, description }: CTAProps) {
   return (
     <motion.div
-      initial={{ y: "100%", opacity: 0 }}
+      initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ staggerChildren: 0.6 }}
       viewport={{ once: true }}

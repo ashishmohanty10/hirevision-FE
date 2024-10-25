@@ -4,9 +4,9 @@ import * as motion from "framer-motion/client";
 export function Metrics() {
   return (
     <motion.div
-      initial={{ y: "100%", opacity: 0 }}
+      initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: "linear", duration: 0.5, delay: 0 }}
+      transition={{ staggerChildren: 0.5 }}
       viewport={{ once: true }}
       className="flex flex-col justify-center items-center my-16 space-y-5 py-16"
     >

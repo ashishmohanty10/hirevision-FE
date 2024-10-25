@@ -30,7 +30,7 @@ export function FAQ() {
             answers={items.answer}
           />
         ))}
-      </div>
+      </div>  
     </motion.div>
   );
 }

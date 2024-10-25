@@ -6,7 +6,7 @@ import Image from "next/image";
 export function PowefulFeature() {
   return (
     <motion.div
-      initial={{ y: 20, opacity: 0 }}
+      initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ staggerChildren: 0.6 }}
       viewport={{ once: true }}
