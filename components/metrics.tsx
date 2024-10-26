@@ -16,7 +16,7 @@ export function Metrics() {
         Numbers speaking for themselves
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-between items-center gap-28 divide-x-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-between items-center gap-28 xl:divide-x-2">
         <div className="text-center space-y-4 p-5 flex items-center flex-col justify-center">
           <p className="font-primary-font text-7xl text-[#573CFF]">75%</p>
           <p className="font-primary-font text-xl text-slate-600">

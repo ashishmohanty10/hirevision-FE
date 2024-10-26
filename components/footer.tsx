@@ -11,7 +11,7 @@ export default function Footer() {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ staggerChildren: 0.6 }}
       viewport={{ once: true }}
-      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-between mx-44 py-16 space-y-5"
+      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-between items-start gap-10 px-20 py-16 space-y-5"
     >
       <div className="space-y-5">
         <Link href={"/"}>
@@ -27,21 +27,21 @@ export default function Footer() {
           <Link
             key={items.id}
             href={items.href}
-            className="text-2xl xl:text-4xl font-semibold text-slate-700 hover:text-textPrimary transition"
+            className="text-base xl:text-4xl font-semibold text-slate-700 hover:text-textPrimary transition"
           >
             {items.name}
           </Link>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 xl:grid-cols-2 space-y-5">
+      <div className="grid grid-cols-1 xl:grid-cols-2  items-start">
         <div className="flex flex-col gap-1 font-medium font-primary-font">
           <p className="text-lg text-slate-800 ">Resources</p>
           {Resouces.map((items) => (
             <Link
               key={items.id}
               href={items.href}
-              className="text-base text-slate-500"
+              className="text-base text-slate-500 hover:text-textPrimary transition"
             >
               {items.name}
             </Link>
@@ -53,7 +53,7 @@ export default function Footer() {
             <Link
               key={items.id}
               href={items.href}
-              className="text-base text-slate-500"
+              className="text-base text-slate-500  hover:text-textPrimary transition"
             >
               {items.name}
             </Link>

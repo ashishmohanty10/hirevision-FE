@@ -29,35 +29,21 @@ export function ComapanyMarquee() {
         Already chosen by the world leaders
       </p>
       <motion.div
-        whileHover={{ x: 0 }}
         variants={marqueeVarient}
         animate="animate"
         className="px-10 flex items-center justify-center gap-24 w-[1000px] mx-auto"
       >
-        {marquee.map((img) => (
-          <Image
-            key={img.id}
-            src={img.img}
-            alt="Marquee"
-            className="w-[120px]"
-          />
-        ))}
-        {marquee.map((img) => (
-          <Image
-            key={img.id}
-            src={img.img}
-            alt="Marquee"
-            className="w-[120px]"
-          />
-        ))}
-        {marquee.map((img) => (
-          <Image
-            key={img.id}
-            src={img.img}
-            alt="Marquee"
-            className="w-[120px]"
-          />
-        ))}
+        {}
+        {[...Array(3)].map((idx) =>
+          marquee.map((img) => (
+            <Image
+              key={`${img.id}-${idx}`}
+              src={img.img}
+              alt="Marquee"
+              className="w-[120px]"
+            />
+          ))
+        )}
       </motion.div>
     </motion.div>
   );

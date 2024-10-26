@@ -9,10 +9,16 @@ import Arrow from "@/public/arrow.svg";
 import Arrow2 from "@/public/asset 37.svg";
 import { navLinks } from "@/constants/constants";
 import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 export function Navbar() {
   const pathName = usePathname();
+  const [showSidebar, setShowSidebar] = useState(false);
 
+  const handleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
   return (
     <motion.nav
       initial={{ opacity: 0, y: "-100%" }}
@@ -60,6 +66,24 @@ export function Navbar() {
             className="size-6 hidden group-hover:block"
           />
         </motion.button>
+      </div>
+
+      {/* mobile nav */}
+
+      <div className="xl:hidden">
+        <div onClick={handleSidebar} className="transition-all">
+          {showSidebar ? <X className="relative z-50" /> : <Menu />}
+        </div>
+
+        {showSidebar && (
+          <div className="transition-all flex flex-col absolute top-0 right-0 px-10 h-screen justify-center gap-5 bg-white rounded-xl  z-40 w-1/2 shadow-md  ">
+            {navLinks.map((items) => (
+              <Link href={items.href} key={items.id} className="text-xl">
+                {items.name}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </motion.nav>
   );

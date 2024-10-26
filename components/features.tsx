@@ -43,6 +43,9 @@ export function Features() {
         viewport={{ once: true }}
         className="xl:flex items-center gap-20 py-5  "
       >
+        <div>
+          <Image src={Feature3} alt="feature 3" />
+        </div>
         <div className="flex flex-col items-center space-y-5 mb-8 xl:mb-0 text-center  xl:text-left">
           <Badge label="FEATURES" />
 
@@ -57,10 +60,6 @@ export function Features() {
           </p>
 
           <Button active={false} img={true} text="Request Demo" />
-        </div>
-
-        <div>
-          <Image src={Feature3} alt="feature 3" />
         </div>
       </motion.div>
     </div>
