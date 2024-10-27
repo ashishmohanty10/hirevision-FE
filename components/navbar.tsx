@@ -36,7 +36,7 @@ export function Navbar() {
             href={items.href}
             key={items.id}
             className={`font-primary-font font-semibold text-base hover:!text-textPrimary transition group-hover:text-headingText ${
-              pathName === items.href ? "text-textPrimary" : "text-slate-300/85"
+              pathName === items.href ? "text-white" : "text-slate-300/85"
             } `}
           >
             {items.name}
