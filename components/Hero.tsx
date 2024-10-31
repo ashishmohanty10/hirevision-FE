@@ -8,21 +8,15 @@ import { HeroImg } from "./heroImg";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-screen">
-      <div className="bg-textPrimary w-[200px]md:w-[400px] xl:w-[700px] h-[400px] absolute -top-48 xl:right-0 -z-10 blur-3xl rounded-full overflow-clip"></div>
-      <div className="bg-green-300  w-[300px]  md:w-[400px] h-[300px] absolute -top-48 left-10 xl:left-44 -z-10 blur-3xl rounded-full overflow-clip"></div>
-      <div className="bg-textPrimary w-[100px] md:w-[400px] h-[300px] absolute -top-48 md:right-[100px] xl:right-[500px] -z-10 blur-3xl rounded-full overflow-clip"></div>
-      <div className="bg-textPrimary w-[200px] md:w-[400px] h-[200px] absolute -top-48 md:right-[50px] xl:right-[600px] -z-10 blur-3xl rounded-full overflow-clip"></div>
-      <div className="bg-yellow-300 w-[300px] md:w-[400px] h-[400px] absolute -top-48 xl:-left-12 -z-20  blur-3xl rounded-full"></div>
-
+    <motion.div
+      className="w-full min-h-screen"
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ staggerChildren: 0.3, duration: 0.5 }}
+      viewport={{ once: true }}
+    >
       <div className="flex flex-col items-center  pt-28 ">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "backIn", duration: 0.5 }}
-          viewport={{ once: true }}
-          className="bg-[#D8D5FA] py-2 px-4 w-fit rounded-3xl flex items-center gap-3 text-sm font-primary-font font-medium mb-5"
-        >
+        <div className="bg-[#D8D5FA] py-2 px-4 w-fit rounded-3xl flex items-center gap-3 text-sm font-primary-font font-medium mb-5">
           <div className="bg-[#EAF2FF] text-textPrimary rounded-2xl px-2 py-1">
             <span>New</span>
           </div>
@@ -31,21 +25,21 @@ const Hero = () => {
             Create teams in Organisation{" "}
             <Image src={ArrowRight} alt="arrow right" className="size-5" />
           </div>
-        </motion.div>
+        </div>
 
         <motion.p
-          initial={{ y: "70%", opacity: 0 }}
+          initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "backIn", duration: 0.5 }}
+          transition={{ ease: "backIn", duration: 0.6 }}
           className="text-center text-3xl md:text-5xl xl:text-7xl font-medium font-secondary-font tracking-tight xl:w-[900px] mb-8 text-headingText leading-tight"
         >
           Boost your hiring process with AI solution
         </motion.p>
 
         <motion.p
-          initial={{ y: "70%", opacity: 0 }}
+          initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "backIn", duration: 0.5 }}
+          transition={{ ease: "backIn", duration: 1 }}
           className="font-primary-font text-lg md:w-[600px] text-center text-slate-700 mb-6"
         >
           Hirevision is used by numerous businesses, institutions, and
@@ -95,7 +89,7 @@ const Hero = () => {
       </div>
 
       <HeroImg />
-    </div>
+    </motion.div>
   );
 };
 

@@ -7,7 +7,7 @@ import * as motion from "framer-motion/client";
 
 export function Features() {
   return (
-    <div className="flex flex-col gap-y-10">
+    <div className="flex flex-col gap-y-10 px-40">
       <motion.div
         initial={{ y: "100%", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -18,11 +18,11 @@ export function Features() {
         <div className="flex flex-col items-center space-y-5 mb-8 xl:mb-0 text-center  xl:text-left">
           <Badge label="FEATURES" />
 
-          <p className="font-secondary-font font-medium text-5xl ">
-            Automated Candidate <br /> Ranking
+          <p className="font-secondary-font text-center font-medium text-5xl ">
+            Automated Candidate Ranking
           </p>
 
-          <p className="text-lg font-normal font-secondary-font text-slate-500 pr-5">
+          <p className="text-lg font-normal font-secondary-font text-slate-500 pr-5 text-center">
             Let AI analyze and rank applicants based on qualifications,
             experience, and skills, ensuring you focus on the most promising
             candidates first.
@@ -49,11 +49,11 @@ export function Features() {
         <div className="flex flex-col items-center space-y-5 mb-8 xl:mb-0 text-center  xl:text-left">
           <Badge label="FEATURES" />
 
-          <p className="font-secondary-font font-medium text-5xl ">
-            Real-Time Applicant <br /> Analytics
+          <p className="font-secondary-font text-center font-medium text-5xl ">
+            Real-Time Applicant Analytics
           </p>
 
-          <p className="text-lg font-normal font-secondary-font text-slate-500 pr-5">
+          <p className="text-lg font-normal  text-center font-secondary-font text-slate-500 pr-5">
             Let AI analyze and rank applicants based on qualifications,
             experience, and skills, ensuring you focus on the most promising
             candidates first.

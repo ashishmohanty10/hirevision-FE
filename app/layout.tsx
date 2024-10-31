@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
+import { BG } from "@/components/bg";
 
 export const metadata: Metadata = {
   title: "Hypervision",
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
+        <BG />
         <Navbar />
         <main>{children}</main>
         <Footer />
