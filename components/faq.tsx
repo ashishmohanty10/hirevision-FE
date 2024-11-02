@@ -10,9 +10,9 @@ import FAQArrow from "@/public/asset 45.svg";
 export function FAQ() {
   return (
     <motion.div
-      initial={{ y: 20, opacity: 0 }}
+      initial={{ y: 70, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ staggerChildren: 0.6 }}
+      transition={{ staggerChildren: 0.6, duration: 0.3 }}
       viewport={{ once: true }}
       className="flex flex-col items-center justify-center space-y-10 py-4"
     >
@@ -30,7 +30,7 @@ export function FAQ() {
             answers={items.answer}
           />
         ))}
-      </div>  
+      </div>
     </motion.div>
   );
 }

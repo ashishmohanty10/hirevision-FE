@@ -28,8 +28,6 @@ import powerfulFeature6 from "@/public/asset 43.svg";
 export const navLinks = [
   { id: 1, name: "Features", href: "/feature" },
   { id: 2, name: "Pricing", href: "/pricing" },
-  { id: 3, name: "Contact", href: "/contact" },
-  { id: 4, name: "Blog", href: "/blog" },
 ];
 
 export const heroImg = [
@@ -139,4 +137,43 @@ export const Company = [
   { id: 2, name: "Our Team", href: "#" },
   { id: 3, name: "Press", href: "#" },
   { id: 4, name: "Contact", href: "#" },
+];
+
+export const Plan = [
+  {
+    name: "Starter",
+    price: "$19/mo",
+    features: [
+      "For individuals",
+      "1,000 API Calls/month",
+      "Email customer support",
+      "Storage 500MB",
+      "AI Models: 5/month",
+    ],
+    cta: "Get Started",
+  },
+  {
+    name: "Pro",
+    price: "$29/mo",
+    features: [
+      "2-10 Members",
+      "10,000 API Calls/month",
+      "Chat customer support",
+      "Storage 1GB",
+      "AI Models: 15/month",
+    ],
+    cta: "Get Started",
+  },
+  {
+    name: "Team",
+    price: "$49/mo",
+    features: [
+      "10+ Members",
+      "100,000 API Calls/month",
+      "Phone customer support",
+      "Storage 5GB",
+      "AI Models: 25/month",
+    ],
+    cta: "Get Started",
+  },
 ];
