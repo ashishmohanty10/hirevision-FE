@@ -36,7 +36,9 @@ export function Navbar() {
             href={items.href}
             key={items.id}
             className={`font-primary-font font-semibold text-base hover:!text-textPrimary transition group-hover:text-headingText ${
-              pathName === items.href ? "text-white  border-b" : "text-white/40"
+              pathName === items.href
+                ? "text-white  border-b "
+                : "text-white/40"
             }`}
           >
             {items.name}
