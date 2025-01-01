@@ -1,20 +1,20 @@
-import { ComapanyMarquee } from "@/components/companies";
+import { CompanyMarquee } from "@/components/companies";
 import { CTA } from "@/components/cta";
 import EasyToImplement from "@/components/EasyImplementation";
 import { FAQ } from "@/components/faq";
 import { Features } from "@/components/features";
 import Hero from "@/components/Hero";
 import { Metrics } from "@/components/metrics";
-import { PowefulFeature } from "@/components/powerfullFeatues";
+import { PowerfulFeature } from "@/components/powerfulFeature";
 
 export default function Home() {
   return (
     <div className="px-5 md:px-10 xl:px-44">
       <Hero />
-      <ComapanyMarquee />
+      <CompanyMarquee />
       <EasyToImplement />
       <Features />
-      <PowefulFeature />
+      <PowerfulFeature />
       <CTA
         title="Make a lasting impression with Hirevision"
         description="Discover why hiring managers prefer Hirevision over the competition

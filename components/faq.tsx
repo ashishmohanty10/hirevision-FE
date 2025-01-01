@@ -22,7 +22,7 @@ function AccordionItem({ data }: { data: FAQItem }) {
 
   return (
     <div
-      className="mb-4 border border-brand/25 w-full p-2 rounded-2xl backdrop-blur-md cursor-pointer"
+      className="mb-4 border border-brand/25 w-full p-4 rounded-2xl backdrop-blur-md cursor-pointer"
       onClick={handleClick}
     >
       <div className="flex items-center justify-between cursor-pointer">

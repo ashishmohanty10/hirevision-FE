@@ -50,7 +50,7 @@ const Hero = () => {
         <motion.div
           initial={{ y: "70%", opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "backIn", duration: 0.5 }}
+          transition={{ ease: "circIn", duration: 0.5 }}
           className="flex items-center"
         >
           {customer.map((img) => (

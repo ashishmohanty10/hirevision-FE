@@ -1,17 +1,17 @@
 import { CTA } from "@/components/cta";
 import FeatureHero from "@/components/feature/feature-hero";
 import { Features } from "@/components/features";
-import { PowefulFeature } from "@/components/powerfullFeatues";
+import { PowerfulFeature } from "@/components/powerfulFeature";
 
 export default function FeaturePage() {
   return (
     <div className="px-5 md:px-10 xl:px-44">
       <FeatureHero />
       <Features />
-      <PowefulFeature />
+      <PowerfulFeature />
       <CTA
-        title="Make a lasting impression with Hirevision"
-        description="Discover why hiring managers prefer Hirevision over the competition and what makes it the easiest, most powerful video interviewing platform on the marke"
+        title="Make a lasting impression with HireVision"
+        description="Discover why hiring managers prefer HireVision over the competition and what makes it the easiest, most powerful video interviewing platform on the make"
       />
     </div>
   );

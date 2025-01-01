@@ -3,7 +3,7 @@ import { Badge } from "./badge";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
 
-export function PowefulFeature() {
+export function PowerfulFeature() {
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}
