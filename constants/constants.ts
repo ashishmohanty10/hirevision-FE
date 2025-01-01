@@ -125,7 +125,7 @@ export const faq = [
   },
 ];
 
-export const Resouces = [
+export const Resources = [
   { id: 1, name: "Blog", href: "#" },
   { id: 2, name: "Apps", href: "#" },
   { id: 3, name: "Learn", href: "#" },
