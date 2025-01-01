@@ -23,7 +23,7 @@ export default function Footer() {
       </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-2 justify-center items-start">
-        <div className="flex flex-col gap-1 font-medium font-primary-font">
+        <div className="flex flex-col gap-1 font-medium font-primary-font mb-5 xl:mb-0">
           <p className="text-lg text-slate-800 ">Resources</p>
           {Resources.map((items) => (
             <Link
