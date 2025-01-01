@@ -16,7 +16,7 @@ export function CTA({ title, description }: CTAProps) {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ staggerChildren: 0.6 }}
       viewport={{ once: true }}
-      className="bg-gradient-to-r from-blue-700 to-blue-500 rounded-xl px-20 py-16 xl:flex items-center justify-between my-6 space-y-5"
+      className="bg-gradient-to-r from-blue-700 to-blue-500 rounded-xl px-10 py-16 xl:flex items-center justify-between my-6 space-y-5"
     >
       <div className="space-y-5">
         <p className="font-secondary-font font-semibold text-white text-xl md:text-3xl xl:text-5xl xl:w-[600px] leading-tight">

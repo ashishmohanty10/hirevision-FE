@@ -7,7 +7,7 @@ import * as motion from "framer-motion/client";
 
 export function Features() {
   return (
-    <div className="flex flex-col gap-y-10 px-40">
+    <div className="flex flex-col gap-y-10">
       <motion.div
         initial={{ y: "100%", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -15,7 +15,7 @@ export function Features() {
         viewport={{ once: true }}
         className=" xl:flex items-center gap-20 py-5  "
       >
-        <div className="flex flex-col items-center space-y-5 mb-8 xl:mb-0 text-center  xl:text-left">
+        <div className="flex flex-col items-center space-y-5 mb-8 xl:mb-0">
           <Badge label="FEATURES" />
 
           <p className="font-secondary-font text-center font-medium text-5xl ">

@@ -11,7 +11,7 @@ export default function Footer() {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ staggerChildren: 0.6 }}
       viewport={{ once: true }}
-      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-between items-start gap-10 px-20 py-16 space-y-5"
+      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-between items-start gap-10 px-10 py-16 space-y-5"
     >
       <div className="space-y-5">
         <Link href={"/"}>
